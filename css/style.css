@@ -1,17 +1,170 @@
-.avatar {
-    max-width: 100%;
-    border-radius: 50%;
-    height: 120px;
-  }
-  .card {
-    margin-bottom: 20px;
-  }
-  .badge {
-    margin-right: 5px;
-  }
-  #profile {
-    margin-top: 20px;
-  }
-  .repo-card {
-    margin-top: 10px;
-  }
+/* General Styling */
+body {
+  background-color: #F1F5F9; /* Light Gray background */
+  color: #2A3D56; /* Dark Blue text */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 32px;
+  font-weight: 600;
+  color: #2A3D56;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Box */
+#searchUser {
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #A9B9D4;
+  color: #2A3D56;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#searchUser:focus {
+  outline: none;
+  background-color: #D4A5A5;
+  box-shadow: 0 4px 12px rgba(212, 165, 165, 0.6);
+}
+
+/* Profile Section */
+#profile {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px; /* Reduced width to match repo cards */
+  background-color: #2A3D56;
+  border-radius: 15px;
+  padding: 30px 25px; /* Increased padding for more space */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#profile img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+#profile h3 {
+  font-size: 24px;
+  color: #F1F5F9;
+  margin-bottom: 10px;
+}
+
+#profile .btn {
+  background-color: #D4A5A5;
+  color: #F1F5F9;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#profile .btn:hover {
+  background-color: #F6A57D; /* Highlight color */
+  color: #2A3D56;
+}
+
+.badge {
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #D4A5A5;
+  color: #F1F5F9;
+}
+
+/* Repositories Section */
+#repos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px; /* Same width as profile card */
+}
+
+#repos h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2A3D56;
+  margin-bottom: 20px;
+}
+
+#repos .card {
+  background-color: #A9B9D4; /* Light Blue */
+  border-radius: 15px;
+  padding: 25px; /* Increased padding for repo card */
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 700px; /* Same width as profile card */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#repos .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+#repos h5 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2A3D56;
+  margin: 10px 0;
+}
+
+#repos .repo-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Added margin-bottom to last badge to create space between tags and "View Repo" button */
+#repos .repo-info .badge:last-child {
+  margin-bottom: 15px; /* Space between badges and button */
+}
+
+#repos .badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background-color: #D4A5A5;
+  color: #F1F5F9;
+}
+
+#repos .btn {
+  background-color: #F6A57D; /* Highlight color */
+  color: #2A3D56;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#repos .btn:hover {
+  background-color: #D4A5A5;
+  color: #F1F5F9;
+}
