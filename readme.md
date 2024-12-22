@@ -22,4 +22,4 @@ A web application that allows users to search for GitHub profiles by entering a 
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/diwakarshukla941/github-Finder.git)
